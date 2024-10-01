@@ -36,6 +36,8 @@ As tags são os blocos construtivos do HTML, que definem os elementos da página
 
 Entender a função de cada uma dessas tags foi essencial para criar a estrutura básica de uma página.
 
+![Tags de Marcações](./assets/imgs/tags.png)
+
 ### 3. Listas: Ordenadas e Não Ordenadas
 Aprendi a usar as tags <b> ul </b> e <b> ol </b> para criar listas.
 
@@ -48,6 +50,7 @@ Um dos conceitos mais importantes foi a semântica no HTML. Usar tags semântica
 
 ![Tags não semânticas e semânticas](.//assets/imgs/tags_html.png)
 
+
 ### 5. Estrutura Básica de um Documento HTML
 Toda página HTML começa com uma estrutura básica:
 ![Estrutura básica de um arquivo HTML](.//assets/imgs/estrutura_basica.png)
@@ -56,11 +59,40 @@ O cabeçalho <b>head</b> contém informações como o título da página e meta 
 
 <!-- <h4>DOM: Document Object Model</h4> -->
 
-## Javascript
-### 1. Configuração de Ambiente
-### 2. Variáveis e tipos de dados 
-### 3. Operadores e comparações 
-### 4. Condicionais 
-### 5. Loops
-### 6. Funções 
-### 7. Escopo, hosting e outros 
+### 6. Formulários
+```js
+  <form action="#">
+    <input 
+      id="nome-usuario"
+      type="text"
+      name="nome-usuario"
+      placeholder="Informe o nome do usuário"
+      value=""
+      size="50"
+      required
+      >
+      <button>Enviar</button>
+  </form>
+```
+
+Saída: 
+http://127.0.0.1:5500/html/formularios/1_campo_de_texto.html?nome-usuario=Grazielle+Amanda+do+Carmo+Caf%C3%A9#
+
+### 7. Campo de Seleção 
+```js
+<html>
+<form action="#">
+  <label for="dia-da-semana">Dia da Semana</label>
+  <select name="dia-semana" id="dia-semana">
+    <option value="1">Domingo</option>
+    <option value="2">Segunda-Feira</option>
+    <option value="3">Terça-Feira</option>
+    <option value="4">Quarta-Feira</option>
+    <option value="5">Quinta-Feira</option>
+    <option value="6">Sexta-Feira</option>
+    <option value="7">Sábado</option>
+  </select>
+  <button>Enviar</button>
+</form>
+</html>
+```
