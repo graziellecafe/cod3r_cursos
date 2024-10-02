@@ -36,8 +36,6 @@ As tags são os blocos construtivos do HTML, que definem os elementos da página
 
 Entender a função de cada uma dessas tags foi essencial para criar a estrutura básica de uma página.
 
-![Tags de Marcações](./assets/imgs/tags.png)
-
 ### 3. Listas: Ordenadas e Não Ordenadas
 Aprendi a usar as tags <b> ul </b> e <b> ol </b> para criar listas.
 
