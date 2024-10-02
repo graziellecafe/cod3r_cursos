@@ -96,3 +96,128 @@ http://127.0.0.1:5500/html/formularios/1_campo_de_texto.html?nome-usuario=Grazie
 </form>
 </html>
 ```
+
+## CSS 
+### 1. Seletores CSS
+![Estrutura HTML](./assets/imgs/seletores_css.png)
+
+O HTML é estrutura, enquanto o CSS é estilização para dentro da sua aplicação. 
+
+**CSS**: Folha de Estilo em Cascada
+
+Iremos utilizar as tags para aplicar estilos em suas tags. Como utilizaremos os seletores para realizar a estilização. 
+
+### Modelo Caixa 
+![Modelo Caixa](./assets/imgs/modelo-caixa.png)
+
+### Tipos de Display
+#### 1. Display Inline
+Os elementos não consideram a altura e a largura, mantendo os elementos lado a lado.
+
+![Display Inline](./assets/imgs/display-inline.png)
+
+#### 2. Display Block
+Somente o trecho é utilizado. Altura e Larguras são consideradas. 
+
+![Display Block](./assets/imgs/display-block.png)
+
+#### 3. Display inline-block
+Usa apenas o tamanho necessário a ser ocupado. 
+
+![Display inline-block](./assets/imgs/display-inline-block.png)
+
+#### 4. Flexbox 
+A partir do momento que você define a sua **div** com **display: flex** a caixa que está inserida nessa div será um **flex container**. 
+
+O **Flexbox** (Flexible Box Layout) é um modelo de layout no CSS que permite a distribuição eficiente do espaço entre os itens de um contêiner, mesmo quando suas dimensões são desconhecidas ou dinâmicas. É especialmente útil para criar layouts responsivos e adaptáveis.
+
+![](./assets/imgs/flexbox-container.png)
+
+#### Eixos no Flexbox
+No Flexbox, há dois eixos principais:
+
+**Main Axis (Eixo Principal)**: É o eixo ao longo do qual os itens flexíveis são dispostos. Por padrão, o eixo principal é horizontal (da esquerda para a direita), mas pode ser alterado para vertical se o flex-direction for definido como column.
+
+**Cross Axis (Eixo Transversal)**: É o eixo que é perpendicular ao eixo principal. Se o eixo principal é horizontal, o eixo transversal será vertical, e vice-versa.
+
+#### Modos do Flexbox 
+```js
+justify-content: start;
+```
+
+![justify-content: start](./assets/imgs/justify-content-start.png)
+
+```js
+justify-content: end;
+```
+
+![justify-content: end](./assets/imgs/justify-content-end.png)
+
+```js
+justify-content: center;
+```
+
+![justify-content: end](./assets/imgs/justify-content-center.png)
+
+```js
+justify-content: space-between;
+```
+
+![justify-content: end](./assets/imgs/justify-content-space-between.png)
+
+```js
+justify-content: space-around;
+```
+
+![justify-content: end](./assets/imgs/justify-content-space-around.png)
+
+```js
+flex-direction: column; 
+justify-content: start;
+```
+
+![justify-content: end](./assets/imgs/flex-direction-column.png)
+
+```js
+flex-direction: column; 
+justify-content: space-around;
+```
+
+![justify-content: end](./assets/imgs/flex-direction-column-2.png)
+
+```js
+align-items: start; 
+```
+
+![justify-content: end](./assets/imgs/flexbox-align-items.png)
+
+```js
+align-items: end; 
+```
+
+![justify-content: end](./assets/imgs/flexbox-align-items-end.png)
+
+```js
+align-items: stretch; 
+```
+
+![justify-content: end](./assets/imgs/flexbox-align-items-stretch.png)
+
+**Exemplo 1**
+![exemplo flexbox](./assets/imgs/flexbox-exemplo.png)
+
+```js
+align-items: center; 
+justify-content: space-between; 
+```
+
+**Exemplo 2**
+![exemplo flexbox](./assets/imgs/flexbox-exemplo-2.png)
+
+```js
+display: flex;
+align-items: center; 
+justify-content: center; 
+gap: 10px; 
+```
+<!-- gap: espaço entre os elementos >
